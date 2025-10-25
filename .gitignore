@@ -1,4 +1,5 @@
-.TAG-Loetkit/TAG-Loetkit-backups
+TAG-Loetkit/TAG-Loetkit-backups
+TAG-Loetkit/*.lck
 LoetkitFirmware/.pio
 LoetkitFirmware/.vscode/.browse.c_cpp.db*
 LoetkitFirmware/.vscode/c_cpp_properties.json
