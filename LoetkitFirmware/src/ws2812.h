@@ -3,13 +3,7 @@
 #include <Arduino.h>
 
 // Important: The WS2812-chain is attached to pin PD0.
-
-struct RGB
-{
-    uint8_t R;
-    uint8_t G;
-    uint8_t B;
-};
+#include "color.h"
 
 void ws2812_init()
 {
@@ -34,6 +28,7 @@ void ws2812_init()
 // was fine-tuned with an oscilloscope.
 inline void ws2812_SendBit(uint8_t bit)
 {
+    
     if (bit)
     {
         //// Send a 1 bit

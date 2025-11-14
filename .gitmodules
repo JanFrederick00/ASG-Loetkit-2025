@@ -1,0 +1,3 @@
+[submodule "LoetkitFirmware/lib/Button"]
+	path = LoetkitFirmware/lib/Button
+	url = https://github.com/madleech/Button.git
