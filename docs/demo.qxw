@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>JanFrederick</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
+   <Universe Name="Universe 1" ID="0">
+    <Input Plugin="MIDI" UID="None" Line="1" Profile="Generic MIDI"/>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: A50285BI)" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>0</ID>
+   <Name>Generic RGB #1</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>1</ID>
+   <Name>Generic RGB #2</Name>
+   <Universe>0</Universe>
+   <Address>3</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>2</ID>
+   <Name>Generic RGB #3</Name>
+   <Universe>0</Universe>
+   <Address>6</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>3</ID>
+   <Name>Generic RGB #4</Name>
+   <Universe>0</Universe>
+   <Address>9</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>4</ID>
+   <Name>Generic RGB #5</Name>
+   <Universe>0</Universe>
+   <Address>12</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>5</ID>
+   <Name>Generic RGB #6</Name>
+   <Universe>0</Universe>
+   <Address>15</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>6</ID>
+   <Name>Generic RGB #7</Name>
+   <Universe>0</Universe>
+   <Address>18</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>7</ID>
+   <Name>Generic RGB #8</Name>
+   <Universe>0</Universe>
+   <Address>21</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>8</ID>
+   <Name>Generic RGB #9</Name>
+   <Universe>0</Universe>
+   <Address>24</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <FixtureGroup ID="0">
+   <Name>sadasdasd</Name>
+   <Size X="3" Y="3"/>
+   <Head X="0" Y="0" Fixture="0">0</Head>
+   <Head X="1" Y="0" Fixture="1">0</Head>
+   <Head X="2" Y="0" Fixture="2">0</Head>
+   <Head X="0" Y="1" Fixture="3">0</Head>
+   <Head X="1" Y="1" Fixture="4">0</Head>
+   <Head X="2" Y="1" Fixture="5">0</Head>
+   <Head X="0" Y="2" Fixture="6">0</Head>
+   <Head X="1" Y="2" Fixture="7">0</Head>
+   <Head X="2" Y="2" Fixture="8">0</Head>
+  </FixtureGroup>
+  <Function ID="0" Type="RGBMatrix" Name="Horizontal Scan">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Stripes</Algorithm>
+   <Color Index="0">4280680703</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+  </Function>
+  <Function ID="1" Type="RGBMatrix" Name="Vertical Scan">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Stripes</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="orientation" Value="Vertical"/>
+  </Function>
+  <Function ID="2" Type="RGBMatrix" Name="Random Color">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Random Pixel Per Row Multicolor</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+  </Function>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Button Caption="Horizontal Scan" ID="0" Icon="">
+    <WindowState Visible="True" X="0" Y="0" Width="90" Height="75"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="0"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Vertical Scan" ID="1" Icon="">
+    <WindowState Visible="True" X="105" Y="0" Width="90" Height="75"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="1"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Random Color" ID="2" Icon="">
+    <WindowState Visible="True" X="210" Y="0" Width="90" Height="75"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="2"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster Visible="1" ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
