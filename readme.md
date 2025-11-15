@@ -1,8 +1,8 @@
 # ASG-Loetkit-2025
 
-(Löt-Video (YouTube))[https://www.youtube.com/watch?v=-um5J8tv-0Q]
+[Löt-Video](https://www.youtube.com/watch?v=-um5J8tv-0Q)
 
-(Demo-Video (YouTube))[https://www.youtube.com/watch?v=5mWFSo3QfBs]
+[Demo-Video](https://www.youtube.com/watch?v=5mWFSo3QfBs)
 
 Dieses Projekt ist eine kleine DMX-leuchte, die 9 LEDs enthält und individuell ansteuern kann.
 
